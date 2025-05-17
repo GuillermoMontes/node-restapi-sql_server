@@ -10,6 +10,8 @@ import {
 
 export const TaskContext = createContext();
 
+console.log("prueba")
+
 export const useTaks = () => {
   const context = useContext(TaskContext);
   if (!context) {
