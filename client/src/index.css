@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body{
+    background: #27272a;
+    font-family: "Radio Canada", sans-serif;
+}
