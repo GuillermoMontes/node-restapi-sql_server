@@ -20,7 +20,7 @@ const TaskCard = ({ task }) => {
       transition={{ duration: 0.5, type: "spring" }}
     >
       <h2 className=" text-2xl text-center">{task.title}</h2>
-      <p className="my-2">{task.description}</p>
+      <p className="my-8 ml-2">{task.description}</p>
       <div className="flex justify-center">
         <motion.button
           onClick={() => deleteTask(task.id)}
