@@ -1,16 +1,19 @@
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 export const getTasksRequest = async () =>
-  await axios.get("http://localhost:4003/api/tasks");
+  await axios.get(`${API_URL}/api/tasks`);
 
 export const createTaskRequest = async (task) =>
-  await axios.post("http://localhost:4003/api/tasks", task);
+  await axios.post(`${API_URL}/api/tasks`, task);
 
 export const deleteTaskRequest = async (id) =>
-  await axios.delete(`http://localhost:4003/api/tasks/${id}`);
+  await axios.delete(`${API_URL}/api/tasks/${id}`);
 
 export const getTaskRequest = async (id) =>
-  await axios.get(`http://localhost:4003/api/tasks/${id}`);
+  await axios.get(`${API_URL}/api/tasks/${id}`);
 
 export const updateTaskRequest = async (id, newFields) =>
-  await axios.put(`http://localhost:4003/api/tasks/${id}`,newFields);
+  await axios.put(`${API_URL}/api/tasks/${id}`, newFields);
+

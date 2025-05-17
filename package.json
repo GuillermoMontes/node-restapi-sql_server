@@ -2,8 +2,10 @@
   "name": "restapi-sqlserver",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev" : "nodemon server/index.js --exec babel-node"
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js --exec babel-node"
   },
   "keywords": [],
   "author": "",
@@ -17,10 +19,6 @@
     "mssql": "^11.0.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.27.2",
-    "@babel/core": "^7.27.1",
-    "@babel/node": "^7.27.1",
-    "@babel/preset-env": "^7.27.2",
     "nodemon": "^3.1.10"
   }
 }

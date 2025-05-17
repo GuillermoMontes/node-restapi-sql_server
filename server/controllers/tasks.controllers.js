@@ -1,5 +1,5 @@
-import { getConnection, sql } from "../database/conection";
-import querys from "../database/querys";
+import { getConnection, sql } from "../database/conection.js";
+import querys from "../database/querys.js";
 
 export const getTasks = async (req, res) => {
   try {
