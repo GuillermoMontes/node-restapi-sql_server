@@ -14,7 +14,7 @@ const corsOptions = {
   methods: ["GET", "POST", "PUT", "DELETE"],
 };
 
-console.log("prueba")
+console.log("prueba nueva")
 app.use(cors(corsOptions));
 app.use(taskRoutes);
 
