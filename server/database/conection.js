@@ -1,7 +1,6 @@
 import sql from "mssql";
 import dotenv from "dotenv";
-
-dotenv.config(); 
+dotenv.config();
 
 const dbsettings = {
   user: process.env.DB_USER,

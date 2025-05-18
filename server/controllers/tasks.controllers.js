@@ -1,16 +1,15 @@
-import { getConnection, sql } from "../database/conection.js";
 import querys from "../database/querys.js";
+import { getConnection, sql } from "../database/conection.js";
 
 export const getTasks = async (req, res) => {
   try {
     const pool = await getConnection();
-    const result = await pool.request().query(querys.getAllTalks);
+    const result = await pool.request().query("SELECT * FROM allTasks");
     res.json(result.recordset);
   } catch (error) {
-    return res.status(500).json({ message: error.message });
+    res.status(500).json({ message: error.message });
   }
 };
-
 export const createTasks = async (req, res) => {
   try {
     const { title, description } = req.body;
