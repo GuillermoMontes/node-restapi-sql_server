@@ -10,11 +10,11 @@ app.set("port", config.port);
 app.use(express.json());
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
 };
 
-console.log("prueba nueva")
+
 app.use(cors(corsOptions));
 app.use(taskRoutes);
 
