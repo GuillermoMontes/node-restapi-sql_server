@@ -9,7 +9,7 @@ const Navbar = () => {
         target="_blank"
         className="flex"
       >
-        <h1 className="mx-1 text-center ">Repositorio</h1>
+        <h1 className="mx-2 text-center ">Repositorio</h1>
         <div className="text-2xl"><FaGithub /></div>
       </Link>
 
