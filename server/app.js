@@ -10,14 +10,15 @@ app.set("port", config.port);
 app.use(express.json());
 
 const corsOptions = {
-  origin: "*",
+  origin: "*", 
   methods: ["GET", "POST", "PUT", "DELETE"],
 };
-
 
 app.use(cors(corsOptions));
 app.use(taskRoutes);
 
-
+app.get("/", (req, res) => {
+  res.send("API Backend está en línea ✅");
+});
 
 export default app;
