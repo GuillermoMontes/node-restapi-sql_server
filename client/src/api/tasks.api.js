@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = "https://miapp-backend-brazil-gtbuc8bsdpf8bxhj.brazilsouth-01.azurewebsites.net";
 
 export const getTasksRequest = async () =>
   await axios.get(`${API_URL}/api/tasks`);
