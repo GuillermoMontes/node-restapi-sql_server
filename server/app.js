@@ -17,8 +17,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(taskRoutes);
 
-app.get("/", (req, res) => {
-  res.send("API Backend está en línea ✅");
-});
+
 
 export default app;
