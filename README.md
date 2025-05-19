@@ -18,6 +18,7 @@ ejecutar el comando "npm run dev"**
 
 *Los estilos fueron aplicados por la librería **Tailwind css 4.0**
 Para las animaciones se utilizó **Framer Motion***
+
 *Otras Librerias :* 
 **Axios**, 
 **Formik**, 
